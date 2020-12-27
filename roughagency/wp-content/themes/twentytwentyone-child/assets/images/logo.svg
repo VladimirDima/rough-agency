@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="26px" viewBox="0 0 45 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-29.000000, -19.000000)" fill="#000000">
+            <g id="Group" transform="translate(29.000000, 19.000000)">
+                <text id="RØUGH" font-family="Metropolis-Bold, Metropolis" font-size="12" font-weight="bold">
+                    <tspan x="0" y="12">R</tspan>
+                    <tspan x="8.136" y="12" font-family="Metropolis-Medium, Metropolis" font-weight="400">Ø</tspan>
+                    <tspan x="17.844" y="12">UGH</tspan>
+                </text>
+                <text id="agency" font-family="EBGaramond-Regular, EB Garamond" font-size="16" font-weight="normal" letter-spacing="0.5">
+                    <tspan x="0" y="21">agency</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

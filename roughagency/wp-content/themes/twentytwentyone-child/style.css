@@ -1,0 +1,173 @@
+/*
+ Theme Name:   Twenty Twenty-One Child
+ Theme URI:    http://example.com/twentytwentyone-child/
+ Description:  Twenty Twenty-One Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentytwentyone
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentytwentyonechild
+*/
+
+@font-face {
+    font-family: Metropolis;  
+    src: url("assets/fonts/metropolis-regular-webfont.woff");  
+    font-weight: normal;  
+}
+
+:root {
+    height: 100vh;
+    margin-top: 0px !important;
+    font-family: Metropolis;
+}
+
+body {
+    background-color: white;
+}
+
+.site-main {
+     padding-top: 0; 
+     padding-bottom: 0; 
+}
+
+.coming-soon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.left-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.left-side .logo {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.left-side .text {
+    text-align: right;
+    font-size: 16px;
+    margin-right: 20px;
+    max-width: 210px;
+    height: 135px;   
+    color: white;
+    mix-blend-mode: difference;
+}
+
+@media only screen and (min-width: 480px) {
+    .left-side .text {
+        margin-left: auto;
+    }
+}
+
+.left-side .text a {
+    position: relative;
+    color: white;
+    word-break: break-all;
+    text-decoration: none;
+}
+
+.left-side .text a:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    display: block;
+    right: 0;
+    background: #fff;
+    animation: 1s ease 2s 1 underlineFromLeft forwards;
+}
+
+.left-side .text a:hover:after {
+    width: 100%;
+    left: 0;
+    background: #fff;
+}
+
+@keyframes underlineFromLeft {
+    0% {
+      width: 0;
+}
+    100% {
+    width: 100%;
+ }
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    background: black;
+    color: white;
+}
+
+.right-side::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    right: 0;
+    position: absolute;
+    background: black;
+    z-index: -1;
+    animation: 1s ease-out 1s 1 slideInFromLeft forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      width: 100%;
+}
+    100% {
+        width: 50%;
+ }
+}
+
+.right-side-inner {
+    margin-left: 20px;
+}
+
+.coming-soon-text {
+    padding-top: 40px;
+    height: 86px;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .coming-soon-text {
+        padding-top: 25px;
+        font-size: 30px;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    height: 135px;
+    padding-top: 5px;
+    max-width: 140px;
+}
+
+.social-icons img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.social-icons a {
+    height: fit-content;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons a:nth-child(2) img {
+    width: 17px;
+}
