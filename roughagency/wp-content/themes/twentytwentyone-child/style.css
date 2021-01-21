@@ -24,6 +24,60 @@
     font-family: Metropolis;
 }
 
+label {
+    font-weight: initial;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
+.site textarea {
+    border: none;
+    border-inline: 1px;
+    border-bottom: 1px solid #fff;
+    border-radius: var(--form--border-radius);
+    color: #fff;
+    line-height: var(--global--line-height-body);
+    padding: var(--form--spacing-unit);
+    margin: 0 2px;
+    width: 100%;
+    max-width: 300px;
+    background: none;
+    transition: all .3s;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=color]:focus,
+.site textarea:focus {
+    color: #fff;
+    outline-offset: 2px;
+    outline: none;
+    border-inline-start: 10px solid;
+}
+
 .site-main {
     padding-top: 0;
     padding-bottom: 0;

@@ -1,0 +1,10 @@
+.mid-section-center-block {
+    max-width: 100% !important;
+}
+
+.mid-section-center-block .paragraph {
+    max-width: 800px;
+    margin: 50px auto 35px auto;
+    text-align: center;
+    font-size: var(--global--font-size-xs);
+}
