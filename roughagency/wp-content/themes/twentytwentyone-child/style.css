@@ -78,19 +78,88 @@ input[type=color]:focus,
     border-inline-start: 10px solid;
 }
 
+
+/* Hide/show contact links in the menu depending on what page the user is on */
+
+.page-id-169 #menu-item-173,
+.page-id-86 #menu-item-173 {
+    display: none;
+}
+
+.page-id-48 #menu-item-174 {
+    display: none;
+}
+
 .site-main {
     padding-top: 0;
     padding-bottom: 0;
 }
 
 .site-logo .custom-logo {
-    max-width: 80px;
+    width: 100px;
+    height: 100%;
 }
 
-@media only screen and (min-width: 482px) {
-    .site-logo .custom-logo {
-        max-width: 150px;
-        max-height: 60px;
+.has-background-white .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
+    background: none;
+    color: #000000;
+}
+
+.site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
+    outline: transparent;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+}
+
+.primary-navigation .current-menu-item>a:first-child:hover,
+.primary-navigation .current_page_item>a:first-child:hover {
+    text-decoration: none;
+}
+
+.primary-navigation a:hover {
+    text-decoration: none;
+}
+
+.primary-navigation .current-menu-item>a:first-child,
+.primary-navigation .current_page_item>a:first-child {
+    text-decoration: none;
+}
+
+.footer-navigation-wrapper li a:hover {
+    text-decoration: none;
+}
+
+.footer-navigation-wrapper li a {
+    text-decoration: none;
+}
+
+.page-id-169 #menu-item-187,
+.page-id-86 #menu-item-187 {
+    display: none;
+}
+
+.page-id-48 .footer-navigation #menu-item-188 {
+    display: none;
+}
+
+.mid-sections-title {
+    font-family: 'EB Garamond', serif !important;
+}
+
+
+/* About page custom css */
+
+.add-on-desktop {
+    display: none;
+}
+
+.about-p {
+    margin-top: 0 !important;
+}
+
+@media only screen and (min-width: 1235px) {
+    .add-on-desktop {
+        display: block;
     }
 }
 
@@ -281,12 +350,15 @@ input[type=color]:focus,
         float: left;
     }
     .site-footer .footer-navigation-wrapper li:nth-child(4) {
-        float: right;
+        float: left;
     }
     .site-footer .footer-navigation-wrapper li:nth-child(5) {
         float: right;
     }
     .site-footer .footer-navigation-wrapper li:nth-child(6) {
+        float: right;
+    }
+    .site-footer .footer-navigation-wrapper li:nth-child(7) {
         float: right;
     }
 }

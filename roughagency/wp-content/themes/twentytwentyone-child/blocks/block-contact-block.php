@@ -1,4 +1,4 @@
-<div class="contact-block alignfull">
+<div class="contact-block alignfull" id="contact">
     <div class="contact-block-inner wp-block-columns alignwide">
         <div class="wp-block-column contact-left">
             <?php block_field( 'left-text' ); ?>

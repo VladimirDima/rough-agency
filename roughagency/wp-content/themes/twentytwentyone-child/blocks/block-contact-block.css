@@ -4,13 +4,18 @@
 }
 
 .contact-block-inner {
+    display: block;
     align-items: center;
     padding: 30px 0;
 }
 
 .contact-left {
     max-width: 450px;
-    font-size: var(--global--font-size-xxxl);
+    font-size: 5rem;
+}
+
+.contact-right {
+    margin-left: 0 !important;
 }
 
 .flex {
@@ -39,4 +44,13 @@ input[type=submit] {
 input[type=submit]:hover {
     background: #fff;
     border-inline-start: 10px solid;
+}
+
+@media only screen and (min-width: 1000px) {
+    .contact-block-inner {
+        display: flex;
+    }
+    .contact-left {
+        font-size: 9rem;
+    }
 }
